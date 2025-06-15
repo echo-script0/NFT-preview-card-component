@@ -15,7 +15,7 @@ This is a solution to the [MFT Preview card component challenge on Frontend Ment
 ![Preview](image.png)
 
 ### Live site
- https://echo-script0.github.io/Order-summary-component/
+  https://echo-script0.github.io/NFT-preview-card-component/
 
 ### Built with
 
