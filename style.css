@@ -1,0 +1,104 @@
+body {background-color: hsl(217, 54%, 11%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;}
+
+.container {background-color:hsl(216, 50%, 16%) ; /* Box background color */
+             width: 280px; /* The size you want the box to be */
+             border-radius: 10px; /* Optional; for rounded edges */
+             display: flex;
+             flex-direction: column;
+             padding: 0 10px 0 10px;
+             min-height: 480px; 
+             overflow: hidden;
+             font-family:'Outfit', sans-serif;}
+
+.container .first-picture {background-image: url('image-equilibrium.jpg');
+                           background-repeat: no-repeat;
+                           background-size: cover;
+                           background-position: center;
+                           width: 80%;
+                           height: 220px;
+                           padding: 20px;
+                           margin: 10px auto 0px auto;
+                           border-radius: 10px;
+                           cursor: pointer;
+                           position: relative;}
+
+
+.container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  border-radius: 10px;}
+
+.first-picture:hover .overlay { opacity: 1;}
+
+.container .equilibrium {color:hsl(0, 0%, 100%) ;
+                         font-size: 18px;
+                         font-weight: 600;
+                         cursor: pointer;
+                         margin-left: 16px;}
+
+.container .equilibrium:hover {color:hsl(178, 100%, 50%) ;}
+
+.container .our-equilibrium {color:hsl(215, 51%, 70%) ;
+                             font-size: 15px;
+                             font-weight: 300;
+                             margin-left: 16px;}
+
+.container .third-writing {display: flex;
+                           flex-direction: row;
+                           margin-left: 14px;}
+
+
+.container .third-writing .left-writing-word {color: hsl(178, 100%, 50%);
+                                              margin-left: 3px;
+                                              font-size: 14px;
+                                              font-weight: 400;}
+
+.container .third-writing .right-writing {margin-left: 80px;}
+
+.container .third-writing .right-writing-word {margin-left: 4px;
+                                               color:hsl(215, 51%, 70%) ;
+                                                font-size: 13px;
+                                                 font-weight: 300;}
+
+.line {height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    opacity: 0.4;
+    margin-left: 16px;
+    margin-right: 16px;}
+
+.container .fourth-writing {display: flex;
+                            flex-direction: row;}
+
+.container .fourth-writing img {width: 25px;
+                                height: 25px;
+                                border: 0.2px solid hsl(0, 0%, 100%);
+                                border-radius: 50px;
+                                margin-left: 20px;}
+
+.container .fourth-writing .fourth-writing-word-one {color: hsl(215, 51%, 70%);
+                                                     font-size: 13px;
+                                                     margin-left: 13px;
+                                                     margin-top: 5px;}
+
+.container .fourth-writing .fourth-writing-word-two {color: hsl(0, 0%, 100%);
+                                                     font-size:13px;
+                                                     margin-left:5px;
+                                                     margin-top :5px;
+                                                     cursor: pointer;}
+
+.container .fourth-writing .fourth-writing-word-two:hover {color: hsl(178, 100%, 50%);}
